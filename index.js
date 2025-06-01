@@ -23,7 +23,7 @@ app.use(cors());
 const server = require('http').createServer(app);
 module.exports.io = require('socket.io')(server, {
     cors: {
-        origin: 'http://localhost:3000', // Cambiar si tu cliente está en otra URL
+        origin: 'https://realtime-chat-backend-zf7p.onrender.com/', // Cambiar si tu cliente está en otra URL
         methods: ['GET', 'POST'], 
     },
     transports: ['websocket'], // Usa exclusivamente WebSocket
